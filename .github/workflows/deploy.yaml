@@ -27,7 +27,7 @@ jobs:
       - name: Build site with Makefile
         run: make pub
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v7
+        uses: actions/upload-pages-artifact@v3
         with:
           path: "./dist"
       - name: Deploy to GitHub Pages
